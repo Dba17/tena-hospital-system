@@ -77,7 +77,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 <div class="form-group">
                     <label>Select Doctor</label>
                     <select name="doctor_id" required>
-                        <option value="" disabled Selected>Choose a doctor</option>
+                        <option value="" disabled selected>Choose a doctor</option>
                         <?php while($doctor = mysqli_fetch_assoc($doctors)): ?>
                             <option value="<?php echo $doctor['id']; ?>">
                                 <?php echo $doctor['full_name']; ?> - <?php echo $doctor['specialization']; ?>
@@ -117,3 +117,4 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 </body>
 
 </html>
+
